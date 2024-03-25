@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Advento Pro Bold";
+  src: url(../assets/Font/AdventoPro/static/AdventPro-Bold.ttf);
+}
+@font-face {
+  font-family: "Advento Pro";
+  src: url(../assets/Font/AdventoPro/static/AdventPro-Regular.ttf);
+}
+@font-face {
+  font-family: "Advento Pro light";
+  src: url(../assets/Font/AdventoPro/static/AdventPro-ExtraLight.ttf);
+}
+@font-face {
+  font-family: "Lato regular";
+  src: url(../assets/Font/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Lato thin";
+  src: url(../assets/Font/Lato/Lato-Light.ttf);
+}
+@font-face {
+  font-family: "Amatic SC";
+  src: url(../assets/Font/AmaticSC/AmaticSC-Bold.ttf);
+}
+@font-face {
+  font-family: Roboto;
+  src: url(../assets/Font/Roboto/Roboto-Regular.ttf);
+}

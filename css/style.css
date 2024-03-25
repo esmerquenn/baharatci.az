@@ -1,0 +1,891 @@
+header {
+  background: #fff;
+}
+.containerAll {
+  width: 96%;
+  margin: 0 auto;
+}
+
+.txt-green {
+  color: #68b210;
+}
+.txt-black {
+  color: #000;
+}
+.orange:hover {
+  color: orange;
+}
+
+/* ICONS */
+.fa-magnifying-glass {
+  padding-right: 0.5rem;
+  font-size: 1.4rem;
+}
+.fa-heart {
+  display: none;
+  border-left: 1px solid #666;
+  padding: 0.2rem 0 0.2rem 1rem;
+}
+.fa-angle-down {
+  font-size: 0.8rem;
+}
+.fa-angle-right {
+  font-size: 0.7rem;
+  padding-right: 5px;
+}
+.fa-envelope,
+.fa-phone {
+  padding-right: 8px;
+  font-size: 1.15rem;
+}
+
+.fa-plus,
+.fa-minus {
+  transition: 0.4s;
+  font-size: 0.7rem;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 6px 7px;
+  box-shadow: 0 0 25px #ddd;
+}
+.fa-minus {
+  color: #68b210;
+}
+.fa-xmark {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #659833;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.fa-bars {
+  order: 1;
+  background: #659833;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0 2px;
+  font-size: 0.8rem;
+}
+/* ICONS */
+
+/* CONNECT Start */
+.delivery {
+  display: none;
+}
+.connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 1rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #4e4e4e;
+  font-family: "Lato regular", sans-serif;
+}
+.contact {
+  display: flex;
+  gap: 2em;
+}
+.contact span:nth-of-type(2) {
+  display: none;
+}
+/* CONNECT End */
+
+/* NAV Start */
+.nav-button-div {
+  display: flex;
+  align-items: center;
+}
+a,
+i {
+  transition: 0.4s;
+}
+a {
+  color: #000;
+}
+nav a:hover {
+  color: #68b210;
+}
+.dropdown a {
+  padding: 0 !important;
+}
+
+nav {
+  padding-block: 25px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-list a {
+  font: 600 1.1rem/1.5 "Advento Pro Bold", sans-serif;
+}
+.hamburger-menu {
+  width: 100%;
+}
+
+.hamburger-dropdown {
+  transition: 0.7s ease-out;
+  height: 0;
+  opacity: 0;
+  transform: rotateX(-20deg);
+}
+.hide {
+  height: 100%;
+  opacity: 1;
+  transform: rotateX(0);
+  transform-origin: top;
+}
+.rotate {
+  rotate: 90deg;
+}
+
+.hamburger-menu-list a {
+  font: 400 0.9rem/1.5 "Lato regular", sans-serif;
+}
+.hamburger-menu-list li {
+  border-bottom: 1px solid #fdedf1;
+  padding-block: 10px;
+}
+.hamburger-menu-list li:hover > a {
+  color: orange;
+}
+.hamburger-menu-list li:hover .fa-plus {
+  color: orange;
+}
+
+.fa-plus,
+.fa-minus {
+  float: right;
+}
+nav i {
+  font-size: 1.3rem;
+}
+
+.menu {
+  display: none;
+}
+.menu-list {
+  display: flex;
+  gap: 2.2rem;
+}
+.nav {
+  position: relative;
+}
+.hamburger-bg {
+  position: absolute;
+  background: #00000094;
+  box-shadow: inset 0 0 5px #0000008e;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  z-index: 1;
+}
+.hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 94%;
+  height: 100vh;
+  background: #000;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(-100%);
+  z-index: 2;
+}
+
+.hamburger-div {
+  position: relative;
+  background: #fdfdfd;
+  height: 100%;
+  border-right: 3px solid #659833;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hamburger-logo {
+  width: 90%;
+  padding-block: 20px;
+}
+.logo {
+  width: 70vw;
+}
+.mehsul-logo {
+  width: 75vw;
+}
+
+/* NAV End */
+
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.breathe-animation {
+  animation: breathe 20s ease-in-out infinite;
+}
+
+/* slider start */
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.items {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+.item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  &.current {
+    opacity: 1;
+  }
+  .img {
+    width: 100%;
+    height: 100%;
+  }
+  .img1 {
+    background: url(../img/slide1.webp) top/cover;
+  }
+  .img2 {
+    background: url(../img/slide2.webp) 60% / cover;
+  }
+  .img3 {
+    background: url(../img/slide3.webp) 60% / cover;
+  }
+}
+
+.buttons {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button {
+  width: 70px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+/* slider ME */
+
+.sly {
+  position: relative;
+}
+
+.sliderMe {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+}
+
+.center-slider {
+  overflow: hidden;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@keyframes upFromDown {
+  from {
+    opacity: 0;
+    transform: translateY(260px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+}
+@keyframes upFromDownh6 {
+  from {
+    opacity: 0;
+    transform: translateY(260px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+}
+@keyframes upFromDownButton {
+  from {
+    opacity: 0;
+    transform: translateY(260px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+}
+@keyframes slideDownAndRotate {
+  from {
+    opacity: 0;
+    transform: translateY(400px) translateX(60px) rotate(-90deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(10px) translateY(150px) rotate(0);
+  }
+}
+.organic {
+  width: 70px;
+  opacity: 0;
+  transform: translateY(150px) translateX(30px) rotate(-90deg);
+  animation: slideDownAndRotate 0.7s ease-out 0.5s forwards;
+}
+h1 {
+  font: 500 2rem/1.5 "Amatic SC", cursive;
+  animation: upFromDown 0.9s ease-out forwards;
+}
+h6 {
+  display: none;
+}
+
+.button-slider {
+  border: none;
+  border-radius: 30px;
+  background: #fff;
+  padding: 6px;
+  height: 36px;
+  width: 6rem;
+  font: 700 0.7rem/1 arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  transition: all 0.5s;
+  transform: translateY(260px);
+  animation: upFromDownButton 0.9s ease-out 0.6s forwards;
+
+  & a {
+    color: #000;
+  }
+  & .fa-angle-right {
+    display: none;
+  }
+}
+.button-slider:hover {
+  background: #659833;
+  a {
+    color: #fff;
+  }
+  i {
+    color: #659833;
+    background: #fff;
+  }
+}
+
+/* slider end */
+
+.haqqimizda {
+  background: url(../img/haqqimizdaBg.webp) 60% / cover;
+  padding: 80px 0;
+  box-shadow: 0 0 5px 4px #e8e7e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-about {
+  background: #f8f9fa;
+}
+.about-center {
+  text-align: center;
+  & a {
+    color: #858585;
+  }
+  & span {
+    color: #858585;
+    font: 500 0.9rem/1.5 "Advento Pro Bold";
+  }
+}
+.bg-white {
+  background: #fff;
+  padding: 60px 15px;
+}
+.meqale p {
+  font: 400 1rem/1.5 Roboto, arial;
+  text-align: center;
+  color: #878787;
+  margin-bottom: 15px;
+}
+h4 {
+  font: 600 2.1rem/1.5 "Advento Pro Bold";
+}
+.haqq {
+  text-align: center;
+  margin-bottom: 15px;
+  & p {
+    color: #68b210;
+    font: 500 2.2rem/1.5 "Advento Pro light";
+  }
+}
+
+.fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999999999999999;
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.circle-container {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  padding: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+.rotating-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 3px dashed #659833;
+  border-radius: 50%;
+  overflow: hidden;
+  animation: rotate 15s linear infinite;
+}
+
+.static-letter {
+  background: #659833;
+  position: relative;
+  font-size: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  z-index: 1;
+  & i {
+    color: #fff;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.all-mehsul-details {
+  & img {
+    background: #f5f6fb;
+    width: 100%;
+  }
+}
+.price {
+  color: #659833;
+  font: 600 1.2rem/1.5 "Lato Regular", sans-serif;
+}
+.fa-check {
+  color: #659833;
+  padding-right: 10px;
+}
+.about-product {
+  color: #4e4e4e;
+  font: 600 0.9rem/1.5 "Lato Regular", sans-serif;
+}
+
+@media only screen and (min-width: 540px) {
+  .containerAll {
+    width: 86%;
+  }
+  .logo {
+    width: 35vw;
+  }
+  @keyframes slideDownAndRotate {
+    from {
+      opacity: 0;
+      transform: translateY(-260px) translateX(-60px) rotate(-90deg);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(130px) translateY(20px) rotate(0);
+    }
+  }
+  .organic {
+    width: 7rem;
+    transform: translateY(-260px) translateX(-60px) rotate(-90deg);
+  }
+  h1 {
+    font: 500 3.2rem/1.5 "Amatic SC", cursive;
+  }
+  h6 {
+    display: block;
+    font: 400 0.9rem "Arial", sans-serif;
+    animation: upFromDownh6 0.9s ease-out 0.5s forwards;
+  }
+
+  .button-slider {
+    padding: 6px 6px 6px 25px;
+    height: 50px;
+    width: 140px;
+    font: 700 0.9rem/1 arial, sans-serif;
+    text-align: left;
+
+    & .fa-angle-right {
+      display: inline;
+      background: #659833;
+      color: #fff;
+      position: absolute;
+      right: 6px;
+      top: 5px;
+      bottom: 7px;
+      padding: 14px 17px;
+      border-radius: 30px;
+    }
+  }
+  .button-slider:hover {
+    background: #659833;
+    a {
+      color: #fff;
+    }
+    i {
+      color: #659833;
+      background: #fff;
+    }
+  }
+
+  .haqqimizda {
+    padding: 95px 0;
+  }
+  h4 {
+    font-size: 2.8rem;
+  }
+  .haqq p {
+    font-size: 2.4rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .containerAll {
+    width: 83%;
+  }
+  .fa-bars {
+    display: none;
+  }
+  .fa-heart {
+    display: block;
+  }
+  .slider {
+    height: 69vh;
+  }
+
+  .contact span:nth-of-type(2) {
+    display: block;
+  }
+  .contact {
+    display: flex;
+    gap: 4em;
+  }
+
+  /* NAV Start */
+  .navMe {
+    display: flex;
+    padding-block: 25px 5px;
+    flex-direction: column;
+    align-items: start;
+  }
+  .mehsul-logo {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+  .menu-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .menu {
+    display: flex;
+  }
+  .menu-list a {
+    font-size: 1rem;
+  }
+  .fa-magnifying-glass {
+    font-size: 1.1rem;
+  }
+
+  .menu-list {
+    display: flex;
+    gap: 1rem;
+  }
+  .logo {
+    width: 200px;
+  }
+
+  .drop-li {
+    position: relative;
+    & a {
+      padding-block: 2.2rem;
+    }
+  }
+  .drop-li:hover .dropdown {
+    visibility: visible;
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+  .dropdown {
+    z-index: 777777777777;
+    transition: 0.4s;
+    visibility: 0;
+    opacity: 0;
+    transform: rotateX(-90deg);
+    transform-origin: top;
+    position: absolute;
+    background: #fff;
+    padding: 15px;
+    width: 170px;
+    top: 50px;
+    left: -15px;
+    & ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+  }
+
+  /* NAV End */
+
+  @keyframes upFromDownButton {
+    from {
+      opacity: 0;
+      transform: translateY(260px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(-50px);
+    }
+  }
+
+  @keyframes slideDownAndRotate {
+    from {
+      opacity: 0;
+      transform: translateY(-260px) translateX(-60px) rotate(-90deg);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(30%) translateX(100%) rotate(0);
+    }
+  }
+  .organic {
+    width: 10rem;
+    transform: translateY(-260px) translateX(-60px) rotate(-90deg);
+  }
+
+  .button-slider {
+    height: 56px;
+    & .fa-angle-right {
+      top: 7px;
+    }
+  }
+
+  h1 {
+    font: 500 3.7rem/1.5 "Amatic SC", cursive;
+    animation: upFromDown 0.9s ease-out forwards;
+  }
+
+  .haqqimizda {
+    padding: 130px 0;
+  }
+  .about-center {
+    text-align: center;
+    & span {
+      font-size: 1.1rem;
+    }
+  }
+  h4 {
+    font-size: 3.5rem;
+  }
+  .haqq p {
+    font-size: 3rem;
+  }
+
+  .fixed {
+    bottom: 30px;
+    right: 30px;
+  }
+
+  .circle-container {
+    width: 70px;
+    height: 70px;
+  }
+
+  .all-mehsul-details {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    & img {
+      width: 500px;
+    }
+  }
+  .price {
+    font: 600 1.7rem/1.5 "Lato Regular", sans-serif;
+  }
+
+  .about-product {
+    font: 600 1.3rem/1.5 "Lato Regular", sans-serif;
+  }
+}
+@media only screen and (min-width: 850px) {
+  @keyframes slideDownAndRotate {
+    from {
+      opacity: 0;
+      transform: translateY(-260px) translateX(-60px) rotate(-90deg);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(80px) translateX(260px) rotate(0);
+    }
+  }
+}
+@media only screen and (min-width: 992px) {
+  .containerAll {
+    width: 76%;
+  }
+  .slider {
+    height: 89vh;
+  }
+
+  .delivery {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .connect {
+    justify-content: space-between;
+  }
+
+  .nav-button-div i {
+    font-size: 1.5rem;
+  }
+
+  .menu-list {
+    gap: 2.5rem;
+  }
+  .menu-list a {
+    font-size: 1.1rem;
+  }
+
+  .sliderMe {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    height: 100%;
+    width: 63%;
+    color: #fff;
+  }
+
+  .center-slider {
+    overflow: hidden;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @keyframes upFromDownButton {
+    from {
+      opacity: 0;
+      transform: translateY(260px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(-90px);
+    }
+  }
+  @keyframes slideDownAndRotate {
+    from {
+      opacity: 0;
+      transform: translateY(-160px) translateX(-200px) rotate(-90deg);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(90px) translateX(-50px) rotate(0);
+    }
+  }
+
+  .organic {
+    width: 200px;
+    transform: translateY(-260px) translateX(-200px) rotate(-90deg);
+    animation: slideDownAndRotate 0.7s ease-out 0.5s forwards;
+  }
+  h1 {
+    font-size: 4.5rem;
+    animation: upFromDown 0.9s ease-out forwards;
+  }
+  h6 {
+    font-size: 1.1rem;
+  }
+  .haqqimizda {
+    padding: 170px 0;
+  }
+  h4 {
+    font-size: 4.5rem;
+  }
+  .meqale p {
+    text-align: left;
+  }
+
+  .haqq p {
+    font-size: 4.6rem;
+  }
+  .section-about {
+    padding: 130px 0;
+  }
+  .bg-white {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
