@@ -233,6 +233,7 @@ setInterval(animateOrganic, 10000);
 
 workCards.onclick = function () {
   workCards.style.boxShadow = "0 0 20px #eeeeee";
+  
   setTimeout(function () {
     workCards.style.boxShadow = "none";
   }, 2000);

@@ -535,6 +535,9 @@ h4 {
   color: #4e4e4e;
   font: 600 0.9rem/1.5 "Lato Regular", sans-serif;
 }
+.me {
+  margin-block: 40px !important;
+}
 
 @media only screen and (min-width: 540px) {
   .containerAll {
@@ -664,9 +667,7 @@ h4 {
   .logo {
     width: 200px;
   }
-  .me {
-    margin-block: 40px;
-  }
+ 
 
   .drop-li {
     position: relative;

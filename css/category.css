@@ -292,7 +292,7 @@ h5 {
   background: #fe9505;
 }
 .all-mehsul {
-  margin-block: 40px;
+  padding-block: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2%;
@@ -372,7 +372,7 @@ h5 {
   /* color: #1e471ead; */
 }
 .section-meyve {
-  padding-block: 40px;
+  padding-block: 80px;
 }
 
 @media only screen and (min-width: 540px) {
@@ -395,7 +395,7 @@ h5 {
     font-size: 1.3rem;
   }
   .pp3 {
-    font-size: 1rem
+    font-size: 1rem;
   }
   .boyukdaire {
     width: 70px;
