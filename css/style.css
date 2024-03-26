@@ -139,11 +139,13 @@ nav {
   transition: 0.7s ease-out;
   height: 0;
   opacity: 0;
+  visibility: hidden;
   transform: rotateX(-20deg);
 }
 .hide {
   height: 100%;
   opacity: 1;
+  visibility: visible;
   transform: rotateX(0);
   transform-origin: top;
 }
@@ -661,6 +663,9 @@ h4 {
   }
   .logo {
     width: 200px;
+  }
+  .me {
+    margin-block: 40px;
   }
 
   .drop-li {

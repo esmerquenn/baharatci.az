@@ -63,7 +63,7 @@ function getCards(category) {
               </div>
               <div class="pp-div">
                 <p class="pp1">${item.name}</p>
-                <p>${item.about}</p>
+                <p class="pp3">${item.about}</p>
                 <p class="pp2">${item.price}</p>
               </div>
             </div>

@@ -90,7 +90,7 @@
           </div>
         </div>
 
-       <a href="/"> <img class="logo" src="img/bahar-son.webp" alt="baharatci" /></a>
+        <a href="/"> <img class="logo" src="img/bahar-son.webp" alt="baharatci" /></a>
 
         <div class="menu">
           <ul class="menu-list">
@@ -193,11 +193,15 @@
         <div class="footer-row footer-row2">
           <h2>Kateqoriyalar</h2>
           <ul class="footer-list">
-            <li><i class="ri-arrow-right-s-line"></i><a href="meyve.html">Meyvə qurusu</a></li>
-            <li><i class="ri-arrow-right-s-line"></i><a href="yaglar.html">Təbii yağlar</a></li>
-            <li><i class="ri-arrow-right-s-line"></i><a href="otlar.html">Təbii otlar</a></li>
-            <li><i class="ri-arrow-right-s-line"></i><a href="cerezler.html">Çərəzlər</a></li>
-            <li><i class="ri-arrow-right-s-line"></i><a href="baharatlar.html">Baharatlar</a></li>
+            <div>
+              <li><i class="ri-arrow-right-s-line"></i><a href="meyve.html">Meyvə qurusu</a></li>
+              <li><i class="ri-arrow-right-s-line"></i><a href="yaglar.html">Təbii yağlar</a></li>
+              <li><i class="ri-arrow-right-s-line"></i><a href="otlar.html">Təbii otlar</a></li>
+            </div>
+            <div>
+              <li><i class="ri-arrow-right-s-line"></i><a href="cerezler.html">Çərəzlər</a></li>
+              <li><i class="ri-arrow-right-s-line"></i><a href="baharatlar.html">Baharatlar</a></li>
+            </div>
           </ul>
         </div>
         <div class="footer-row footer-row3">
@@ -216,8 +220,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/dataProduct.js"></script>
+    <script src="js/hamburger.js"></script>
     <script src="js/modal.js"></script>
-    <!-- <script src="js/app.js"></script> -->
     <script>
       function goToDetailsPage(itemId, category) {
         window.location.href = `detail.html?item=${itemId}&cat=${category}`;

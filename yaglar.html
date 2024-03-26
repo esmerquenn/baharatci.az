@@ -32,7 +32,8 @@
     <header>
       <div class="connect containerAll">
         <div class="delivery">
-          <img src="img/info-icon-2.png" alt="" />
+          <img src="img/info-icon-2.png" alt="logo" />
+          
           <span>Şəhər daxili ödənişsiz çatdırılma</span>
         </div>
         <div class="contact">
@@ -46,7 +47,7 @@
           </span>
         </div>
       </div>
-      <nav class="containerAll navMe">
+      <nav class="containerAll">
         <div onclick="closeHamburger()" class="hamburger-bg"></div>
         <div class="hamburger">
           <div class="hamburger-div">
@@ -89,37 +90,36 @@
           </div>
         </div>
 
-        <a href="/"> <img class="mehsul-logo" src="img/bahar-son.webp" alt="baharatci" /></a>
-        <div class="menu-flex">
-          <div class="menu">
-            <ul class="menu-list">
-              <li class="menu-li"><a href="/">Ana səhifə</a></li>
-              <li class="menu-li"><a href="haqqimizda.html">Haqqımızda</a></li>
-              <li class="drop-li menu-li">
-                <a href="#">Məhsullar </a>
-                <i class="fa-solid fa-angle-down"></i>
-                <div class="dropdown">
-                  <ul>
-                    <li><a href="meyve.html">Meyvə qurusu</a></li>
-                    <li><a href="yaglar.html">Təbii yağlar</a></li>
-                    <li><a href="otlar.html">Təbii otlar</a></li>
-                    <li><a href="cerezler.html">Çərəzlər </a></li>
-                    <li><a href="baharatlar.html">Baharatlar </a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="menu-li"><a href="blog.html">Bloq</a></li>
-              <li class="menu-li"><a href="elaqe.html">Əlaqə</a></li>
-            </ul>
-          </div>
-          <div class="nav-button-div">
-            <i onclick="openHamburger()" class="fa-solid fa-bars"></i>
-            <div class="search-container">
-              <i onclick="showInput()" id="glass" class="fa-solid fa-magnifying-glass orange txt-black"></i>
-              <div class="relative">
-                <input type="text" id="searchInput" placeholder="Axtar..." />
-                <div id="searchResults" class="search-results"></div>
+        <a href="/"><img class="logo" src="img/bahar-son.webp" alt="baharatci" /></a>
+
+        <div class="menu">
+          <ul class="menu-list">
+            <li class="menu-li"><a href="/">Ana səhifə</a></li>
+            <li class="menu-li"><a href="haqqimizda.html">Haqqımızda</a></li>
+            <li class="drop-li menu-li">
+              <a href="#">Məhsullar </a>
+              <i class="fa-solid fa-angle-down"></i>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="meyve.html">Meyvə qurusu</a></li>
+                  <li><a href="yaglar.html">Təbii yağlar</a></li>
+                  <li><a href="otlar.html">Təbii otlar</a></li>
+                  <li><a href="cerezler.html">Çərəzlər </a></li>
+                  <li><a href="baharatlar.html">Baharatlar </a></li>
+                </ul>
               </div>
+            </li>
+            <li class="menu-li"><a href="blog.html">Bloq</a></li>
+            <li class="menu-li"><a href="elaqe.html">Əlaqə</a></li>
+          </ul>
+        </div>
+        <div class="nav-button-div">
+          <i onclick="openHamburger()" class="fa-solid fa-bars"></i>
+          <div class="search-container">
+            <i onclick="showInput()" id="glass" class="fa-solid fa-magnifying-glass orange txt-black"></i>
+            <div class="relative">
+              <input type="text" id="searchInput" placeholder="Axtar..." />
+              <div id="searchResults" class="search-results"></div>
             </div>
           </div>
         </div>
@@ -133,7 +133,7 @@
         </div>
       </div>
 
-      <section class="section-meyve containerAll">
+      <section class="section-meyve me containerAll">
         <div class="all-mehsul"></div>
       </section>
     </main>
@@ -163,11 +163,15 @@
         <div class="footer-row footer-row2">
           <h2>Kateqoriyalar</h2>
           <ul class="footer-list">
-            <li><i class="ri-arrow-right-s-line"></i><a href="meyve.html">Meyvə qurusu</a></li>
-            <li><i class="ri-arrow-right-s-line"></i><a href="yaglar.html">Təbii yağlar</a></li>
-            <li><i class="ri-arrow-right-s-line"></i><a href="otlar.html">Təbii otlar</a></li>
-            <li><i class="ri-arrow-right-s-line"></i><a href="cerezler.html">Çərəzlər</a></li>
-            <li><i class="ri-arrow-right-s-line"></i><a href="baharatlar.html">Baharatlar</a></li>
+            <div>
+              <li><i class="ri-arrow-right-s-line"></i><a href="meyve.html">Meyvə qurusu</a></li>
+              <li><i class="ri-arrow-right-s-line"></i><a href="yaglar.html">Təbii yağlar</a></li>
+              <li><i class="ri-arrow-right-s-line"></i><a href="otlar.html">Təbii otlar</a></li>
+            </div>
+            <div>
+              <li><i class="ri-arrow-right-s-line"></i><a href="cerezler.html">Çərəzlər</a></li>
+              <li><i class="ri-arrow-right-s-line"></i><a href="baharatlar.html">Baharatlar</a></li>
+            </div>
           </ul>
         </div>
         <div class="footer-row footer-row3">

@@ -155,7 +155,7 @@ h2 {
   padding: 4px 7px;
   border-radius: 50%;
   border: 1px solid #fff;
-  top: -3.6px;
+  top: -3.3px;
   font: 600 0.5rem "Advento Pro Bold", sans-serif;
 }
 .pp-div {
@@ -163,6 +163,9 @@ h2 {
 }
 .pp1 {
   font: 600 0.8rem/1.5 "Advento Pro Bold";
+}
+.pp3 {
+  font: 600 0.7rem "Advento Pro Bold";
 }
 .pp2 {
   color: #76a713;
@@ -390,6 +393,9 @@ h5 {
 
   .pp1 {
     font-size: 1.3rem;
+  }
+  .pp3 {
+    font-size: 1rem
   }
   .boyukdaire {
     width: 70px;

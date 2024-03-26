@@ -30,12 +30,10 @@ footer {
   width: 60%;
 }
 .footer-row ul {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 15px;
-  width: 60%;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  width: 90%;
   margin-top: 20px;
 }
 .footer-list i {
@@ -151,24 +149,27 @@ footer {
   overflow: hidden;
 }
 
+
 .footer-list li {
+  width: 80%;
   position: relative;
+  margin-block: 8px !important;
 }
-.footer-list li::after {
+.footer-list a::after {
   content: "";
   position: absolute;
   background-color: #fe9505;
   height: 1px;
   width: 0;
   right: 0;
-  bottom: -10px;
+  bottom: -4px;
   transition: 0.5s;
 }
 .footer-list a:hover {
   color: #fe9505;
 }
 
-.footer-list li:hover::after {
+.footer-list a:hover::after {
   width: 100%;
 }
 .footer-row3 button {
@@ -219,6 +220,12 @@ footer {
 .btn4:hover a,
 .btn4:hover i {
   color: #fe9505;
+}
+@media (max-width: 1175px) {
+  .footer-row ul {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
 }
 @media (max-width: 1015px) {
   .container {
