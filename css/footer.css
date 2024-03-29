@@ -5,6 +5,8 @@
 footer {
   background-color: #285e28;
   height: 100%;
+  margin-top: 120px !important;
+
   font-family: "Lato regular";
 }
 .footer-rows {
@@ -33,7 +35,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5px;
-  width: 90%;
+  width: 96%;
   margin-top: 20px;
 }
 .footer-list i {
@@ -149,9 +151,8 @@ footer {
   overflow: hidden;
 }
 
-
 .footer-list li {
-  width: 80%;
+  width: 100%;
   position: relative;
   margin-block: 8px !important;
 }
@@ -246,7 +247,6 @@ footer {
     width: 33%;
   }
   .footer-row1 {
-    background: url(/img/shape-6.webp) center/cover;
     background-repeat: no-repeat;
     width: 100%;
 

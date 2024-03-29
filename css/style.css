@@ -70,7 +70,7 @@ header {
   order: 1;
   background: #659833;
   color: #fff;
-  width: 35px;
+  width: 42px;
   height: 35px;
   display: flex;
   justify-content: center;
@@ -363,17 +363,17 @@ nav i {
   }
   to {
     opacity: 1;
-    transform: translateX(10px) translateY(150px) rotate(0);
+    transform: translateX(10px) translateY(90px) rotate(0);
   }
 }
 .organic {
-  width: 70px;
+  width: 65px;
   opacity: 0;
   transform: translateY(150px) translateX(30px) rotate(-90deg);
   animation: slideDownAndRotate 0.7s ease-out 0.5s forwards;
 }
 h1 {
-  font: 500 2rem/1.5 "Amatic SC", cursive;
+  font: 500 1.8rem/1.5 "Amatic SC", cursive;
   animation: upFromDown 0.9s ease-out forwards;
 }
 h6 {
@@ -667,7 +667,6 @@ h4 {
   .logo {
     width: 200px;
   }
- 
 
   .drop-li {
     position: relative;

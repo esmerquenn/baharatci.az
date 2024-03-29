@@ -159,7 +159,7 @@ h2 {
   font: 600 0.5rem "Advento Pro Bold", sans-serif;
 }
 .pp-div {
-  padding: 0 30px 22px;
+  padding: 0 10px 12px;
 }
 .pp1 {
   font: 600 0.8rem/1.5 "Advento Pro Bold";
@@ -356,26 +356,39 @@ h5 {
   top: 0;
 }
 .bb1 {
-  font: 600 1rem "Advento Pro Bold", sans-serif;
+  font: 600 0.85rem "Advento Pro Bold", sans-serif;
   text-transform: capitalize;
 }
 .osal {
   color: #767676cf;
-  font: 400 0.9rem "Lato regular", sans-serif;
+  font: 400 0.8rem "Lato regular", sans-serif;
   padding: 9px 0;
+}
+.fa-star {
+  font-size: 0.8rem;
 }
 
 .banaskrt:hover {
   border: 2px solid #285e28ad;
 }
-.checked {
-  /* color: #1e471ead; */
-}
+
 .section-meyve {
   padding-block: 80px;
 }
 
 @media only screen and (min-width: 540px) {
+  .osal {
+    font-size: 0.9rem;
+  }
+  .fa-star {
+    font-size: 1rem;
+  }
+  .bb1 {
+    font: 600 1rem "Advento Pro Bold", sans-serif;
+  }
+  .pp-div {
+    padding: 0 30px 22px;
+  }
   .after button {
     padding: 17px 30px;
   }

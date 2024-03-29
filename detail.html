@@ -206,17 +206,14 @@
       document.addEventListener("DOMContentLoaded", () => {
         const { item, cat } = getQueryParams();
         if (item && cat) {
-          //   console.log(`Ürün ID'si: ${item}, Kategori: ${cat}`);
           dat = data.filter((dat) => dat.category == cat);
           let b = {};
           dat[0].cards.filter((forr) => {
             forr.id == item ? (b = forr) : "";
           });
-          console.log(b);
 
           let section = document.querySelector(".me");
           let mehsul = document.querySelector(".all-mehsul");
-          console.log(section);
           section.innerHTML += `
   <div class="all-mehsul-details">
   <img src="mehsullar/${b.img}" alt="" />
@@ -232,7 +229,6 @@
 
           dat[0].cards.forEach((product) => {
             if (product.id != item) {
-              console.log(product);
               mehsul.innerHTML += `
            <div class="banaskrt" onclick="goToDetailsPage('${product.id}','${cat}')">
               <div class="image">
@@ -242,7 +238,7 @@
                 <button onclick="goToDetailsPage('${product.id}','${cat}')"  class="btn6">
                   <a href="javascript:void(0);"><i class="fa-solid fa-magnifying-glass fa-glass"></i> ətraflı</a>
                 </button>
-                <p class="bb1">${product.name}</p>
+                <p class="bb1">${product.name} ${product.about}</p>
                 <p class="osal">${product.price}</p>
                 <div class="strs">
                   <span class="fa fa-star checked"></span>
@@ -257,15 +253,6 @@
           });
         }
       });
-
-      // console.log("Seçilen Ürün:", b);
-      // // Aynı kategoriye ait tüm ürünleri loglayın
-      // console.log("Aynı Kategoriye Ait Diğer Ürünler:");
-      // dat[0].cards.forEach((product) => {
-      //   if (product.id != item) { // Seçilen ürün dışındakileri yazdır
-      //     console.log(product);
-      //   }
-      // });
     </script>
   </body>
 </html>
