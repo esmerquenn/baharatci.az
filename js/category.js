@@ -1,12 +1,7 @@
 const allGridArea = document.querySelector(".all-grid-area");
 
 let a = "";
-let categories = `
-<div onclick="getCategory()" id=""  class="category cat-1">
-<div>
-  <span>Bütün Məhsullar</span> <br />
-</div>
-</div>`;
+let categories = ''
 data.map((item, i) => {
   categories += ` 
   <div onclick="getCategory('${item.category}', '${i}')" id="${item.category}"  class="category cat-${i + 1}">
@@ -21,12 +16,7 @@ let cardsContent = "";
 data.forEach((category) => {
   getCards(category);
 });
-function getCategory(category, i) {
-  console.log(i);
-  let a = document.getElementById(`${category}`);
-  console.log(a);
-  a.style.background = "#d57373";
-
+function getCategory(category) {
   cardsContent = "";
   if (category == undefined) {
     data.forEach((category) => {
@@ -75,34 +65,3 @@ function goToDetailsPage(itemId, category) {
   window.location.href = `detail.html?item=${itemId}&cat=${category}`;
 }
 
-// function MyProduct(item, cat) {
-//   let dat = data.filter((dat) => dat.category == cat);
-//   let b = {};
-//   dat[0].cards.filter((forr) => {
-//     if (forr.id == item) {
-//       b = forr;
-//     }
-//   });
-//   return b;
-// }
-{
-  /* <button onclick="Myproduct('${item.id}','${category.category}')" data-item-id="${item.id}" class="btn5 btn-after">
-<a href="detail.html"><i class="fa-solid fa-cart-plus"></i> Ətraflı</a>
-// <a href="/a${item.id}.html"><i class="fa-solid fa-cart-plus"></i> Ətraflı</a> */
-}
-// getDetail('${item.id}','${category}')
-
-// let section = document.querySelector(".me");
-// console.log(section);
-//   section.innerHTML += `
-//   <div class="all-mehsul-details">
-//   <img src="mehsullar/badamyagi.webp" alt="" />
-
-//   <div>
-//     <h4>Badam yagi</h4>
-//     <p class="price">1.00 m</p>
-//     <p class="about-product"><i class="fa-solid fa-check"></i> 100qr</p>
-//     <p class="about-product"><i class="fa-solid fa-check"></i> 100% Təbii</p>
-//     <p class="about-product"><i class="fa-solid fa-check"></i> Müştərinin istəyindən asılı həcm</p>
-//   </div>
-// </div>`;

@@ -7,7 +7,7 @@ footer {
   height: 100%;
   margin-top: 120px !important;
 
-  font-family: "Lato regular";
+  font-family: "Lato regular", sans-serif;
 }
 .footer-rows {
   display: flex;

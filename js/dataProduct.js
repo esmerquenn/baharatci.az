@@ -168,4 +168,20 @@ const data = [
       { id: 36, img: "kokos.webp", name: "Kokos yağı", about: "100 qr", price: " 1₼" },
     ],
   },
+  {
+    category: "Tort məhsulları",
+    cards: [
+      { id: 37, img: "kuncut.webp", name: "Damla şokolad", about: "100 qr ", price: "  1.50₼  " },
+
+      { id: 38, img: "zeytun.webp", name: "Disk şokolad", about: "100 qr", price: " 1.50₼  " },
+
+      { id: 39, img: "badamyagi.webp", name: "Vanil", about: "10qr ", price: "0.50₼ " },
+
+      { id: 40, img: "kokos.webp", name: "Qabartma tozu", about: "100 qr", price: " 1.50₼" },
+      { id: 40, img: "kokos.webp", name: "Qatılaşdırılmış süd", about: "500 qr", price: " 3₼" },
+      { id: 40, img: "kokos.webp", name: "Qatılaşdırılmış süd bişmiş", about: "500 qr", price: " 3₼" },
+      { id: 40, img: "kokos.webp", name: "Tort jelesi", about: "500 qr", price: " 3₼" },
+
+    ],
+  },
 ];

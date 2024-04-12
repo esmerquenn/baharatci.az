@@ -20,99 +20,61 @@ h2 {
   margin-bottom: 40px;
 }
 .categories {
-  /* max-height: 600px; */
   display: grid;
-  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
   grid-column: 1 / span 2;
 }
 
 .category {
-  color: #000;
-  width: 82%;
+  color: #333;
+  width: 100%;
   max-width: 300px;
-  height: 100%;
   margin: 0 auto;
   border-radius: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: left;
-  height: 100px;
-  font: 500 1rem/1.5 "Lato regular", sans-serif;
+  height: 70px;
+  font: 500 0.8rem/1.5 "Lato regular", sans-serif;
   transition: 0.4s;
   span {
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 }
+
 .cat-1 {
   border: 2px solid #b2a87f;
-}
-.cat-1:hover {
   background-color: #b2a87f;
 }
-.cat1 {
-  background-color: #b2a87f;
-  color: #fff;
-}
-
-.cat-2 {
+.cat-4 {
+  background: #d57373;
   border: 2px solid #d57373;
 }
-.cat-2:hover {
-  background-color: #d57373;
-}
-.cat2 {
-  background-color: #d57373;
-  color: #fff;
-}
-
-.cat-3 {
+.cat-2 {
   border: 2px solid #8fb9df;
-}
-.cat-3:hover {
-  background-color: #8fb9df;
-}
-.cat3 {
-  background-color: #8fb9df;
-  color: #fff;
-}
-
-.cat-4 {
-  border: 2px solid #eea8e9;
-}
-.cat-4:hover {
-  background-color: #eea8e9;
-}
-.cat4 {
-  background-color: #eea8e9;
-  color: #fff;
+  background-color: #8fb8dfc0;
 }
 
 .cat-5 {
+  border: 2px solid #eea8e9b5;
+  background-color: #eea8e9ba;
+}
+.cat-3 {
   border: 2px solid #62eeae;
-}
-.cat-5:hover {
   background: #62eeae;
-}
-.cat5 {
-  background: #62eeae;
-  color: #fff;
 }
 .cat-6 {
-  border: 2px solid #b2a87f;
-}
-.cat-6:hover {
-  background-color: #b2a87f;
-}
-.cat6 {
-  background-color: #b2a87f;
-  color: #fff;
+  border: 2px solid #ffe0a1;
+  background-color: #ffe0a1;
 }
 
 .category:active,
 .category:hover {
   color: #fff;
+  background: #68b20f;
 }
 
 .kart {
@@ -121,6 +83,13 @@ h2 {
   margin: 0 auto;
   border: 2px solid rgba(200, 200, 200, 0.462);
   background: #fff;
+}
+.cards{
+  & .kart{
+    border-radius: 10px;
+    border: 2px solid #68b20f;
+    overflow: hidden;
+  }
 }
 
 .kart-main {
@@ -162,10 +131,10 @@ h2 {
   padding: 0 10px 12px;
 }
 .pp1 {
-  font: 600 0.8rem/1.5 "Advento Pro Bold";
+  font: 600 1.1rem/1.5 "Advento Pro Bold", sans-serif;
 }
 .pp3 {
-  font: 600 0.7rem "Advento Pro Bold";
+  font: 600 .9rem "Advento Pro Bold", sans-serif;
 }
 .pp2 {
   color: #76a713;
@@ -174,7 +143,7 @@ h2 {
 }
 h5 {
   margin-top: 5px;
-  font: 600 1.3rem/1.5 "Advento Pro Bold";
+  font: 600 1.3rem/1.5 "Advento Pro Bold", sans-serif;
 }
 .work-center,
 .category-center {
@@ -257,12 +226,12 @@ h5 {
 }
 
 .after button {
-  padding: 10px 23px;
+  padding: 7px 14px;
   text-transform: uppercase;
   color: white;
   background-color: #76a713;
   border-radius: 999px;
-  font: 700 0.9rem "Lato regular", sans-serif;
+  font: 700 0.6rem "Lato regular", sans-serif;
   box-shadow: none;
   border: 0;
   border: 2px solid #76a713;
@@ -376,7 +345,10 @@ h5 {
   padding-block: 80px;
 }
 
-@media only screen and (min-width: 540px) {
+@media only screen and (min-width: 440px) {
+  .category { width: 85%;}
+}
+  @media only screen and (min-width: 540px) {
   .osal {
     font-size: 0.9rem;
   }
@@ -391,14 +363,22 @@ h5 {
   }
   .after button {
     padding: 17px 30px;
+    font-size: 0.9rem 
+
   }
   .categories {
-    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
   .category {
     width: 100%;
     max-width: 270px;
+    height: 85px;
+    font-size: 1rem;
+    span {
+      font-size: 1.3rem;
+    }
   }
+
   .kart {
     width: 100%;
     max-width: 300px;
@@ -443,11 +423,9 @@ h5 {
   h2 {
     font-size: 3.6rem;
   }
-
   .categories {
     margin: 30px;
   }
-
   .work-cards {
     position: relative;
     flex-direction: column;
@@ -467,7 +445,6 @@ h5 {
   .num:hover {
     background: #fe9605;
   }
-
   .num2 {
     border-inline: 1px dashed #ddd;
   }
@@ -485,9 +462,13 @@ h5 {
       height: 250px;
     }
   }
-
   .btn6 {
     padding: 10px 17px;
+  }
+  .category {
+    max-width: 270px;
+    height: 95px;
+   
   }
 }
 
@@ -512,9 +493,25 @@ h5 {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2%;
   }
+
 }
 @media only screen and (min-width: 1200px) {
   .all-grid-area {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 310px) {
+  .categories {
+    grid-template-columns: 1fr;
+  }
+
+  .category {
+    width: 80%;
+    height: 75px;
+  }
+  .all-grid-area {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 }

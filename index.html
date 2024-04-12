@@ -18,7 +18,20 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/carts.css" />
@@ -125,17 +138,17 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main >
       <div class="sly">
         <div class="slider">
           <ul class="items">
-            <li class="item current">
+            <li class="iteme current">
               <div class="breathe-animation img img1"></div>
             </li>
-            <li class="item">
+            <li class="iteme">
               <div class="breathe-animation img img2"></div>
             </li>
-            <li class="item">
+            <li class="iteme">
               <div class="breathe-animation img img3"></div>
             </li>
           </ul>
@@ -170,6 +183,7 @@
 
         <div class="all-grid-area"></div>
       </section>
+     
       <section class="howToWork containerAll">
         <div class="work-center">
           <h2>Biz necə işləyirik ?</h2>
@@ -210,6 +224,9 @@
           </div>
           <div class="swiper-pagination"></div>
         </div>
+      </section>
+      <section class="section-owl containerAll" >
+        <div class="owl-carousel owl-theme cards"></div>
       </section>
     </main>
     <div class="fixed" id="scrollToTopButton">
@@ -269,14 +286,103 @@
         </div>
       </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="js/app.js"></script>
     <script src="js/category.js"></script>
     <script src="js/modal.js"></script>
     <script src="js/hamburger.js"></script>
+
+    <script>
+      const moreSellers = [
+        { id: 32, img: "qizilgul.webp", name: "Qızılgül", about: "100 qr", price: " 3₼  ", category: "Təbii otlar" },
+        { id: 34, img: "zeytun.webp", name: "Zeytun yağı", about: "100 qr", price: " 1₼  ", category: "Təbii yağlar" },
+        { id: 21, img: "əncir.png", name: "Əncir qurusu", about: "100qr", price: " 2.50₼  ", category: "Meyvə qurusu" },
+        { id: 24, img: "qaraKişmiş.png", name: " Qara kişmiş ", about: "100qr ", price: " 2.50₼  ", category: "Meyvə qurusu" },
+        { id: 16, img: "qarisiq.webp", name: "Qarışıq ləpə", about: "100qr ", price: "2₼ ", category: "Çərəzlər" },
+        {
+          id: 2,
+          img: "mixek.webp",
+          name: "Mixək",
+          about: "Üyüdülmüş 100qr",
+          price: "4₼",
+          category: "Baharatlar",
+        },
+        {
+          id: 11,
+          img: "findiq.webp",
+          name: "Fındıq ",
+          about: "100 qr ",
+          price: "2.30₼  ",
+          category: "Çərəzlər",
+        },
+      ];
+      const cards = document.querySelector(".cards");
+      moreSellers.forEach((element) => {
+        cards.innerHTML += `<div class="kart" onclick="goToDetailsPage('${element.id}', '${element.category}')">
+          <div class="after">
+             <button onclick="goToDetailsPage('${element.id}', '${element.category}')" class="btn5 btn-after">
+             <a href="javascript:void(0);"><i class="fa-solid fa-cart-plus"></i> Ətraflı</a>
+             </button>
+        </div>
+            <img class="card-img" src="mehsullar/${element.img}" alt="${element.name}" />
+            <div class="kart-main">
+              <div class="position">
+                <div class="boyukdaire">
+                  <div class="kicikdaire">0</div>
+                </div>
+              </div>
+              <div class="pp-div">
+                <p class="pp1">${element.name}</p>
+                <p class="pp3">${element.about}</p>
+                <p class="pp2">${element.price}</p>
+              </div>
+            </div>
+          </div>`;
+      });
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        autoplay: true,
+        autoplayTimeOut: 2000,
+        nav: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+
+          350: {
+            items: 2,
+          },
+          600: {
+            items: 2,
+          },
+          1100: {
+            items: 3,
+          },
+          1300: {
+            items: 4,
+          },
+        },
+      });
+
+      function goToDetailsPage(itemId, category) {
+  window.location.href = `detail.html?item=${itemId}&cat=${category}`;
+}
+    </script>
   </body>
 </html>
