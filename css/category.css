@@ -39,13 +39,14 @@ h2 {
   height: 70px;
   font: 500 0.8rem/1.5 "Lato regular", sans-serif;
   transition: 0.4s;
+  border: 2px solid #68b20f;
   span {
     font-weight: bold;
     font-size: 1rem;
   }
 }
 
-.cat-1 {
+/* .cat-1 {
   border: 2px solid #b2a87f;
   background-color: #b2a87f;
 }
@@ -69,7 +70,7 @@ h2 {
 .cat-6 {
   border: 2px solid #ffe0a1;
   background-color: #ffe0a1;
-}
+} */
 
 .category:active,
 .category:hover {
