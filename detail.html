@@ -39,7 +39,7 @@
         <div class="contact">
           <span>
             <i class="fa-solid fa-phone txt-green"></i>
-            Phone: <a href="tel:+994105155119" class="orange txt-black">+994 10 515 51 19</a>
+            Tel: <a href="tel:+994105155159" class="orange txt-black">+994 10 515 51 59</a>
           </span>
           <span>
             <i class="fa-solid fa-envelope txt-green"></i>
@@ -47,95 +47,106 @@
           </span>
         </div>
       </div>
-      <nav class="containerAll">
-        <div onclick="closeHamburger()" class="hamburger-bg"></div>
-        <div class="hamburger">
-          <div class="hamburger-div">
-            <i onclick="closeHamburger()" class="fa-solid fa-xmark"></i>
-            <a href="/"><img class="hamburger-logo" src="img/bahar-son.webp" alt="baharatci" /></a>
-            <div class="hamburger-menu">
-              <ul class="hamburger-menu-list">
-                <li class="menu-li">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <a href="/">Ana səhifə</a>
-                </li>
-                <li class="menu-li">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <a href="haqqimizda.html">Haqqımızda</a>
-                </li>
-                <li onclick="openDropdownHamburger()" class="menu-li-drop">
-                  <i class="fa-solid fa-angle-right turnIcon"></i>
-                  <a href="#">Məhsullar </a>
-                  <i class="fa-solid fa-plus changeIcon"></i>
-                  <div class="hamburger-dropdown">
-                    <ul>
-                      <li><a href="meyve.html">Meyvə qurusu</a></li>
-                      <li><a href="yaglar.html">Təbii yağlar</a></li>
-                      <li><a href="otlar.html">Təbii otlar</a></li>
-                      <li><a href="cerezler.html">Çərəzlər </a></li>
-                      <li><a href="baharatlar.html">Baharatlar </a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="menu-li">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <a href="blog.html">Bloq</a>
-                </li>
-                <li class="menu-li">
-                  <i class="fa-solid fa-angle-right"></i>
-                  <a href="elaqe.html">Əlaqə</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <a href="/"><img class="logo" src="img/bahar-son.webp" alt="baharatci" /></a>
-
-        <div class="menu">
-          <ul class="menu-list">
-            <li class="menu-li"><a href="/">Ana səhifə</a></li>
-            <li class="menu-li"><a href="haqqimizda.html">Haqqımızda</a></li>
-            <li class="drop-li menu-li">
-              <a href="#">Məhsullar </a>
-              <i class="fa-solid fa-angle-down"></i>
-              <div class="dropdown">
-                <ul>
-                  <li><a href="meyve.html">Meyvə qurusu</a></li>
-                  <li><a href="yaglar.html">Təbii yağlar</a></li>
-                  <li><a href="otlar.html">Təbii otlar</a></li>
-                  <li><a href="cerezler.html">Çərəzlər </a></li>
-                  <li><a href="baharatlar.html">Baharatlar </a></li>
+      <div class="nav-fixed">
+        <nav class="containerAll">
+          <div onclick="closeHamburger()" class="hamburger-bg"></div>
+          <div class="hamburger">
+            <div class="hamburger-div">
+              <i onclick="closeHamburger()" class="fa-solid fa-xmark"></i>
+              <a href="/"><img class="hamburger-logo" src="img/bahar-son.webp" alt="baharatci" /></a>
+              <div class="hamburger-menu">
+                <ul class="hamburger-menu-list">
+                  <li class="menu-li">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="/">Ana səhifə</a>
+                  </li>
+                  <li class="menu-li">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="haqqimizda.html">Haqqımızda</a>
+                  </li>
+                  <li onclick="openDropdownHamburger()" class="menu-li-drop">
+                    <i class="fa-solid fa-angle-right turnIcon"></i>
+                    <a href="#">Məhsullar </a>
+                    <i class="fa-solid fa-plus changeIcon"></i>
+                    <div class="hamburger-dropdown">
+                      <ul>
+                        <li><a href="meyve.html">Meyvə qurusu</a></li>
+                        <li><a href="yaglar.html">Təbii yağlar</a></li>
+                        <li><a href="otlar.html">Təbii otlar</a></li>
+                        <li><a href="cerezler.html">Çərəzlər </a></li>
+                        <li><a href="baharatlar.html">Baharatlar </a></li>
+                        <li><a href="tortproduct.html">Tort məhsulları</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="menu-li">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="blog.html">Bloq</a>
+                  </li>
+                  <li class="menu-li">
+                    <i class="fa-solid fa-angle-right"></i>
+                    <a href="elaqe.html">Əlaqə</a>
+                  </li>
                 </ul>
               </div>
-            </li>
-            <li class="menu-li"><a href="blog.html">Bloq</a></li>
-            <li class="menu-li"><a href="elaqe.html">Əlaqə</a></li>
-          </ul>
-        </div>
-        <div class="nav-button-div">
-          <i onclick="openHamburger()" class="fa-solid fa-bars"></i>
-          <div class="search-container">
-            <i onclick="showInput()" id="glass" class="fa-solid fa-magnifying-glass orange txt-black"></i>
-            <div class="relative">
-              <input type="text" id="searchInput" placeholder="Axtar..." />
-              <div id="searchResults" class="search-results"></div>
             </div>
           </div>
-        </div>
-      </nav>
+
+          <a href="/"><img class="logo" src="img/bahar-son.webp" alt="baharatci" /></a>
+
+          <div class="menu">
+            <ul class="menu-list">
+              <li class="menu-li"><a href="/">Ana səhifə</a></li>
+              <li class="menu-li"><a href="haqqimizda.html">Haqqımızda</a></li>
+              <li class="drop-li menu-li">
+                <a href="#">Məhsullar </a>
+                <i class="fa-solid fa-angle-down"></i>
+                <div class="dropdown">
+                  <ul>
+                    <li><a href="meyve.html">Meyvə qurusu</a></li>
+                    <li><a href="yaglar.html">Təbii yağlar</a></li>
+                    <li><a href="otlar.html">Təbii otlar</a></li>
+                    <li><a href="cerezler.html">Çərəzlər </a></li>
+                    <li><a href="baharatlar.html">Baharatlar </a></li>
+                    <li><a href="tortproduct.html">Tort məhsulları</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-li"><a href="blog.html">Bloq</a></li>
+              <li class="menu-li"><a href="elaqe.html">Əlaqə</a></li>
+            </ul>
+          </div>
+          <div class="nav-button-div">
+            <i onclick="openHamburger()" class="fa-solid fa-bars"></i>
+            <div class="search-container">
+              <i onclick="showInput()" id="glass" class="fa-solid fa-magnifying-glass orange txt-black"></i>
+              <div class="relative">
+                <input type="text" id="searchInput" placeholder="Axtar..." />
+                <div id="searchResults" class="search-results"></div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
       <div class="haqqimizda">
         <div class="about-center">
-          <h4>Daha çox məlumat</h4>
+          <h4>Məhsul haqqında</h4>
         </div>
       </div>
 
       <section class="section-meyve me containerAll"></section>
       <div class="containerAll"><h3>Oxşar Məhsullar</h3></div>
       <div class="all-mehsul me containerAll"></div>
+
     </main>
+    <div class="fixed" id="scrollToTopButton">
+      <div class="circle-container">
+        <div class="rotating-circle"></div>
+        <div class="static-letter"><i class="fa-solid fa-angle-up"></i></div>
+      </div>
+    </div>
     <footer>
       <div class="footer-rows container">
         <div class="footer-row footer-row1">
@@ -170,6 +181,7 @@
             <div>
               <li><i class="ri-arrow-right-s-line"></i><a href="cerezler.html">Çərəzlər</a></li>
               <li><i class="ri-arrow-right-s-line"></i><a href="baharatlar.html">Baharatlar</a></li>
+              <li><i class="ri-arrow-right-s-line"></i><a href="tortproduct.html">Tort məhsulları</a></li>
             </div>
           </ul>
         </div>
@@ -190,11 +202,14 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/dataProduct.js"></script>
     <script src="js/hamburger.js"></script>
+    <script src="js/scroll.js"></script>
+
     <script src="js/modal.js"></script>
     <script>
       function goToDetailsPage(itemId, category) {
         window.location.href = `detail.html?item=${itemId}&cat=${category}`;
       }
+
       function getQueryParams() {
         const params = new URLSearchParams(window.location.search);
         const item = params.get("item");
@@ -202,34 +217,53 @@
         return { item, cat };
       }
       let dat = [];
+      let sub = ''
       document.addEventListener("DOMContentLoaded", () => {
         const { item, cat } = getQueryParams();
         if (item && cat) {
-          dat = data.filter((dat) => dat.category == cat);
+          dat = data.find((dat) => dat.category == cat);
           let b = {};
-          dat[0].cards.filter((forr) => {
+          dat.cards.filter((forr) => {
             forr.id == item ? (b = forr) : "";
+            console.log(b.subImg ? b.subImg : false);
           });
 
           let section = document.querySelector(".me");
+          let sectionMe = document.querySelector(".subMe");
           let mehsul = document.querySelector(".all-mehsul");
+
+          if(b.subImg){
+            b.subImg.map(item=> {sub +=`
+            <img src="mehsullar/${item}" alt="subCategories" />
+              `}).join('')
+          }
+          console.log(sub);
           section.innerHTML += `
-  <div class="all-mehsul-details">
-  <img src="mehsullar/${b.img}" alt="" />
+                      <div class="all-mehsul-details">
+                        <div>
+                          <img class="all-img" src="mehsullar/${b.img}" alt="" />
+                          <div class="subMe">
+                            ${sub}
+                          </div>  
+                        </div>
+                        <div class="name">
+                          <h4>${b.name}</h4>
+                          <p class="price">${b.price}</p>
+                          <p class="about-product"><i class="fa-solid fa-check"></i> ${b.about}</p>
+                          <p class="about-product"><i class="fa-solid fa-check"></i> 100% Təbii</p>
+                          <p class="about-product"><i class="fa-solid fa-check"></i> Müştərinin istəyindən asılı həcm</p>
+                          <a href="https://wa.me/994105155159" class="wp"> 
+                            <b>Whatsapp ilə sifariş<b>
+                            <button class="button-wp">
+                              <i class="fa-brands fa-whatsapp"></i>
+                            </button>
+                          </a>
+                        </div>
+                      </div>`;
+         
 
-  <div>
-    <h4>${b.name}</h4>
-    <p class="price">${b.price}</p>
-    <p class="about-product"><i class="fa-solid fa-check"></i> ${b.about}</p>
-    <p class="about-product"><i class="fa-solid fa-check"></i> 100% Təbii</p>
-    <p class="about-product"><i class="fa-solid fa-check"></i> Müştərinin istəyindən asılı həcm</p>
-    <button class="button-wp">
-    <a href="https://wa.me/994105155119"><i class="fa-brands fa-whatsapp"></i></a>
-  </button>
-  </div>
-</div>`;
 
-          dat[0].cards.forEach((product) => {
+          dat.cards.forEach((product) => {
             if (product.id != item) {
               mehsul.innerHTML += `
            <div class="banaskrt" onclick="goToDetailsPage('${product.id}','${cat}')">
@@ -255,8 +289,6 @@
           });
         }
       });
-
-    
     </script>
   </body>
 </html>

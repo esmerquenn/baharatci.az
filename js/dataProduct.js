@@ -171,16 +171,17 @@ const data = [
   {
     category: "Tort məhsulları",
     cards: [
-      { id: 37, img: "Damlasokolad.jpeg", name: "Damla şokolad", about: "100 qr ", price: "  1.50₼  " },
+      { id: 37, img: "damla.png", name: "Damla şokolad", about: "100 qr ", price: "  1.50₼  " },
 
-      { id: 38, img: "Disksokolad.webp", name: "Disk şokolad", about: "100 qr", price: " 1.50₼  " },
+      { id: 38, img: "disk.png", name: "Disk şokolad", about: "100 qr", price: " 1.50₼  " },
 
-      { id: 39, img: "Vanil.webp", name: "Vanil", about: "10qr ", price: "0.50₼ " },
+      { id: 39, img: "vanil.png", name: "Vanil", about: "10qr ", price: "0.50₼ " },
 
-      { id: 40, img: "Qabartmatozu.jpg", name: "Qabartma tozu", about: "100 qr", price: " 1.50₼" },
-      { id: 40, img: "Qatılaşdırılmışsüd.webp", name: "Qatılaşdırılmış süd", about: "500 qr", price: " 3₼" },
-      { id: 40, img: "Qatılaşdırılmışbişmişsüd.webp.jpg", name: "Qatılaşdırılmış süd bişmiş", about: "500 qr", price: " 3₼" },
-      { id: 40, img: "1.jpeg", name: "Tort jelesi", about: "500 qr", price: " 3₼" },
+      { id: 40, img: "qabartma.png", name: "Qabartma tozu", about: "100 qr", price: " 1.50₼" },
+      { id: 41, img: "qatisut.png", name: "Qatılaşdırılmış süd", about: "500 qr", price: " 3₼" },
+      { id: 42, img: "qatisud.png", name: "Qatılaşdırılmış süd bişmiş", about: "500 qr", price: " 3₼" },
+      { id: 43, img: "1.png", subImg: ['22.png','33.png','44.png','55.png'],
+       name: "Qida rəngləri", about: "50 qr", price: "0.30 ₼" },
 
     ],
   },

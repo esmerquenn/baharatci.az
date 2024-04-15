@@ -29,10 +29,14 @@ function getCategory(category) {
     });
   }
 
-  allGridArea.innerHTML = `<div class="categories">${categories}</div> ${cardsContent}`;
+  allGridArea.innerHTML = `<div class="categories">${categories}</div>         
+                            <h3 class="all-h3">100% təbii məhsullar</h3>
+                            ${cardsContent}`;
 }
 
-allGridArea.innerHTML = `<div class="categories">${categories}</div> ${cardsContent}`;
+allGridArea.innerHTML = `<div class="categories">${categories}</div>         
+                            <h3 class="all-h3">100% təbii məhsullar</h3>
+                        ${cardsContent}`;
 
 function getCards(category) {
   category.cards.forEach((item) => {

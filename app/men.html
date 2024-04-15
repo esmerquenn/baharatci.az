@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .button-style {
+        position: relative;
+        padding: 20px 40px;
+        border: none;
+        background-color: #f0f0f0;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 10px; /* Butonlar arasında boşluk */
+      }
+
+      .button-style .path {
+        display: block;
+        stroke-dasharray: 380;
+        stroke-dashoffset: 380;
+        animation: none; /* Animasyon başlangıçta devre dışı */
+      }
+
+      @keyframes dash {
+        from {
+          stroke-dashoffset: 380;
+        }
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button id="animatedButton1" class="button-style">
+      Button 1
+      <svg width="150" height="70" viewBox="0 0 150 70" style="position: absolute; top: -15px; left: -15px">
+        <rect
+          x="5"
+          y="5"
+          width="140"
+          height="60"
+          fill="transparent"
+          stroke="black"
+          stroke-width="2"
+          rx="15"
+          ry="15"
+          class="path"
+        />
+      </svg>
+    </button>
+
+    <button id="animatedButton2" class="button-style">
+      Button 2
+      <svg width="150" height="70" viewBox="0 0 150 70" style="position: absolute; top: -15px; left: -15px">
+        <rect
+          x="5"
+          y="5"
+          width="140"
+          height="60"
+          fill="transparent"
+          stroke="black"
+          stroke-width="2"
+          rx="15"
+          ry="15"
+          class="path"
+        />
+      </svg>
+    </button>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        startAnimation(document.getElementById("animatedButton1"), function () {
+          startAnimation(document.getElementById("animatedButton2"));
+        });
+      });
+
+      function startAnimation(button, callback) {
+        var path = button.querySelector(".path");
+        path.style.animation = "dash 3s linear 1"; // Animasyonu başlat
+        path.addEventListener(
+          "animationend",
+          function () {
+            if (callback) callback(); // Eğer callback varsa, çağır
+          },
+          { once: true }
+        );
+      }
+    </script>
+  </body>
+</html>

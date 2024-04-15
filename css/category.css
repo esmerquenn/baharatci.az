@@ -11,13 +11,19 @@ h2 {
   gap: 20px;
   grid-template-columns: 1fr 1fr;
 }
-.section-category,
-.howToWork {
-  padding-block: 70px;
+.all-h3 {
+  grid-column: 2 span/3;
+  padding-block: 20px;
+}
+.section-category {
+padding-block: 50px 20px;
   text-align: center;
 }
+
+.howToWork{text-align: center;padding-block: 20px;}
 .category-center {
-  margin-bottom: 40px;
+  /* margin-block: 40px; */
+  & h3{display: none;}
 }
 .categories {
   display: grid;
@@ -46,31 +52,7 @@ h2 {
   }
 }
 
-/* .cat-1 {
-  border: 2px solid #b2a87f;
-  background-color: #b2a87f;
-}
-.cat-4 {
-  background: #d57373;
-  border: 2px solid #d57373;
-}
-.cat-2 {
-  border: 2px solid #8fb9df;
-  background-color: #8fb8dfc0;
-}
 
-.cat-5 {
-  border: 2px solid #eea8e9b5;
-  background-color: #eea8e9ba;
-}
-.cat-3 {
-  border: 2px solid #62eeae;
-  background: #62eeae;
-}
-.cat-6 {
-  border: 2px solid #ffe0a1;
-  background-color: #ffe0a1;
-} */
 
 .category:active,
 .category:hover {
@@ -85,8 +67,8 @@ h2 {
   border: 2px solid rgba(200, 200, 200, 0.462);
   background: #fff;
 }
-.cards{
-  & .kart{
+.cards {
+  & .kart {
     border-radius: 10px;
     border: 2px solid #68b20f;
     overflow: hidden;
@@ -135,7 +117,7 @@ h2 {
   font: 600 1.1rem/1.5 "Advento Pro Bold", sans-serif;
 }
 .pp3 {
-  font: 600 .9rem "Advento Pro Bold", sans-serif;
+  font: 600 0.9rem "Advento Pro Bold", sans-serif;
 }
 .pp2 {
   color: #76a713;
@@ -347,9 +329,11 @@ h5 {
 }
 
 @media only screen and (min-width: 440px) {
-  .category { width: 85%;}
+  .category {
+    width: 85%;
+  }
 }
-  @media only screen and (min-width: 540px) {
+@media only screen and (min-width: 540px) {
   .osal {
     font-size: 0.9rem;
   }
@@ -364,8 +348,7 @@ h5 {
   }
   .after button {
     padding: 17px 30px;
-    font-size: 0.9rem 
-
+    font-size: 0.9rem;
   }
   .categories {
     gap: 2rem;
@@ -452,6 +435,10 @@ h5 {
   .all-grid-area {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .all-h3 {
+    grid-column: 3 span/4;
+ 
+  }
   .categories {
     margin: 0;
     grid-column: 1 / span 3;
@@ -469,7 +456,6 @@ h5 {
   .category {
     max-width: 270px;
     height: 95px;
-   
   }
 }
 
@@ -477,9 +463,13 @@ h5 {
   .kart {
     max-height: 360px;
   }
-  .all-grid-area {
-    gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
+  .category-center {
+    margin-bottom: 40px;
+    & h3{display: block;}
+    & h2{display: none;}
+  }
+  .all-h3 {
+   display: none;
   }
 
   .categories {
@@ -494,7 +484,6 @@ h5 {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2%;
   }
-
 }
 @media only screen and (min-width: 1200px) {
   .all-grid-area {

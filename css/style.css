@@ -1,6 +1,4 @@
-header {
-  background: #fff;
-}
+
 .containerAll {
   width: 96%;
   margin: 0 auto;
@@ -19,6 +17,7 @@ header {
 /* ICONS */
 .fa-magnifying-glass {
   font-size: 1.8rem;
+  padding-right: 5px;
 }
 .fa-heart {
   display: none;
@@ -37,16 +36,42 @@ header {
   padding-right: 8px;
   font-size: 1.15rem;
 }
-.button-wp{
-  width: 40px;
-  height: 40px;
-  border: 1px solid  #659833;
-  border-radius: 5px;
-  background: #fff;
-  & i{
-    color: #659833;
-    font-size: 1.7rem;
+
+.wp {
+  color: #cbff8b;
+  background: #68b210;
+  display: inline-block;
+  padding: 10px 10px 10px 10px ;
+  border-radius: 20px;
+  margin-top: 15px;
+  font: 600 1.1rem "Lato Regular", sans-serif;
+  transition: 0.4s;
+
+  & .fa-check {
+    opacity: 0;
   }
+}
+
+
+
+.button-wp {
+  padding-left: 10px ;
+  border: none;
+  background: none;
+  & i {
+    color: #cbff8b;
+    font-size: 1.1rem ;
+  }
+}
+.wp:hover {
+  background: #333;
+  color: #68b210;
+  box-shadow: 0 0 10px #69b21090;
+  
+}
+.wp:hover .button-wp i{color: #68b210 ;}
+.centerm {
+  text-align: center;
 }
 
 .fa-plus,
@@ -78,16 +103,9 @@ header {
 }
 .fa-bars {
   order: 1;
-  background: #659833;
-  color: #fff;
-  width: 64px;
-  height: 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  /* padding: 0 2px; */
-  font-size: 1.2rem;
+  color: #000;
+  font-size: 2rem;
+  padding-left: 10px;
 }
 /* ICONS */
 
@@ -101,6 +119,7 @@ header {
   align-items: center;
   padding-block: 1rem;
   flex-wrap: wrap;
+  
   border-bottom: 1px solid #4e4e4e;
   font-family: "Lato regular", sans-serif;
 }
@@ -115,6 +134,7 @@ header {
 
 /* NAV Start */
 .nav-button-div {
+  padding-right: 30px;
   display: flex;
   align-items: center;
 }
@@ -133,10 +153,26 @@ nav a:hover {
 }
 
 nav {
-  padding-block: 25px 5px;
+  padding-block: 15px 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 1s;
+  
+}
+
+.fixedd{
+  position: fixed;
+ z-index: 4;
+ background: #fffffff5;
+ top: 0;
+ right: 0;
+ left: 0;
+ width: 100%;
+ box-shadow: 0 0 10px #646464;
+ align-items: start;
+ padding-block: 0 !important;
+
 }
 .menu-list a {
   font: 600 1.1rem/1.5 "Advento Pro Bold", sans-serif;
@@ -235,7 +271,7 @@ nav i {
 }
 .logo {
   padding-top: 10px;
-  width: 60vw;
+  width: 64vw;
 }
 .mehsul-logo {
   width: 75vw;
@@ -442,7 +478,6 @@ h6 {
   & a {
     color: #858585;
   }
- 
 }
 .bg-white {
   background: #fff;
@@ -526,7 +561,7 @@ h4 {
   }
 }
 .all-mehsul-details {
-  & img {
+  & .all-img {
     background: #f5f6fb;
     width: 100%;
   }
@@ -543,11 +578,36 @@ h4 {
   color: #4e4e4e;
   font: 600 0.9rem/1.5 "Lato Regular", sans-serif;
 }
-.me {
-  margin-block: 40px !important;
+
+.subMe{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-content: center;
+  justify-content: center;
+  & img{
+   max-width: 70px ;
+min-width: 50px;
+    object-fit: cover;
+  }
+}
+.all-mehsul-details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+ 
 }
 
 @media only screen and (min-width: 540px) {
+  .subMe{
+    gap: 20px;
+
+    & img{
+      width: 100px ;
+      object-fit: cover;
+    }
+  }
   .containerAll {
     width: 86%;
   }
@@ -616,9 +676,19 @@ h4 {
   .haqq p {
     font-size: 2.4rem;
   }
+
+  .wp {
+    font: 600 1.4rem "Lato Regular", sans-serif;
+  }
+  .button-wp {
+    & i {
+      font-size: 1.5rem ;
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) {
+  .wp {padding-top: 0;}
   .containerAll {
     width: 83%;
   }
@@ -752,10 +822,9 @@ h4 {
   }
   .about-center {
     text-align: center;
-   
   }
   h4 {
-    font-size: 3.5rem;
+    font-size: 2.6rem;
   }
   .haqq p {
     font-size: 3rem;
@@ -772,11 +841,10 @@ h4 {
   }
 
   .all-mehsul-details {
-    display: flex;
     align-items: center;
-    gap: 20px;
-    & img {
-      width: 500px;
+    justify-content: space-around;
+    & .all-img {
+      width: 450px;
     }
   }
   .price {
@@ -786,6 +854,20 @@ h4 {
   .about-product {
     font: 600 1.3rem/1.5 "Lato Regular", sans-serif;
   }
+
+  .wp {
+    font-size: 1.5rem;
+   
+  }
+  .button-wp {
+    padding: 10px 0 0 0;
+    & .fa-check{opacity: 1;display: none}
+    & i {
+      font-size: 1.5rem;
+    }
+  }
+  .nav-button-div {
+    padding-right: 0;}
 }
 @media only screen and (min-width: 850px) {
   @keyframes slideDownAndRotate {
@@ -798,6 +880,13 @@ h4 {
       transform: translateY(80px) translateX(260px) rotate(0);
     }
   }
+  h4 {
+    font-size: 3.5rem;
+  }
+  .all-mehsul-details {
+    flex-direction: row;
+  }
+  
 }
 @media only screen and (min-width: 992px) {
   .containerAll {
@@ -816,10 +905,7 @@ h4 {
     justify-content: space-between;
   }
 
-  .nav-button-div i {
-    font-size: 1.5rem;
-  }
-
+ 
   .menu-list {
     gap: 2.5rem;
   }
@@ -899,4 +985,16 @@ h4 {
     max-width: 1200px;
     margin: auto;
   }
+  .wp {
+    font-size: 1.7rem;
+   
+   
+  }
+  .button-wp {
+    & i {
+      font-size: 2rem;
+    }
+  }
+ 
+
 }

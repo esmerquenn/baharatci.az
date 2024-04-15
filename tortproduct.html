@@ -132,7 +132,7 @@
     <main>
       <div class="haqqimizda">
         <div class="about-center">
-          <h4> Təbii yağlar</h4>
+          <h4>Meyvə Qurusu</h4>
         </div>
       </div>
 
@@ -207,13 +207,12 @@
     <script src="js/modal.js"></script>
     <script>
       let mehsul = document.querySelector(".all-mehsul");
-
-      data.map((category) => (category.category == "Təbii yağlar" ? getCards(category) : ""));
-
+      data.map((category) => (category.category == "Tort məhsulları" ? getCards(category) : ""));
       function getCards(category) {
+        let a = "";
         category.cards.map((item) => {
-          mehsul.innerHTML += `
-    <div class="banaskrt" onclick="goToDetailsPage('${item.id}', '${category.category}')">
+          a += `
+           <div class="banaskrt" onclick="goToDetailsPage('${item.id}', '${category.category}')">
               <div class="image">
                 <img src="mehsullar/${item.img}" alt="" />
               </div>
@@ -233,7 +232,9 @@
               </div>
             </div>`;
         });
+        mehsul.innerHTML = a;
       }
+
       function goToDetailsPage(itemId, category) {
         window.location.href = `detail.html?item=${itemId}&cat=${category}`;
       }
