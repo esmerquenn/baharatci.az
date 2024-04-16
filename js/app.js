@@ -290,6 +290,3 @@ window.addEventListener("resize", function () {
 
 
 
-document.getElementById("scrollToTopButton").addEventListener("click", function () {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-});
