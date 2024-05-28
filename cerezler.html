@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logous.png" type="img/logous">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -22,7 +24,6 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/font.css" />
     <link rel="stylesheet" href="css/modal.css" />
-    <link rel="stylesheet" href="css/carts.css" />
     <link rel="stylesheet" href="css/category.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -146,6 +147,22 @@
         <div class="static-letter"><i class="fa-solid fa-angle-up"></i></div>
       </div>
     </div>
+    <div class="floating-widget">
+      <div class="social-icons" id="socialIcons">
+        <a target="_blank" href="https://www.tiktok.com/@baharatci.az?_t=8mg0HgFS6ae&_r=1" class="social-icon">
+          <img src="img/aaa.png" alt="Phone" />
+        </a>
+        <a target="_blank" href="https://wa.me/994105155159" class="social-icon">
+          <img src="img/256px-WhatsApp_icon.png" alt="WhatsApp" />
+        </a>
+        <a target="_blank" href="https://www.instagram.com/baharatci.az?igsh=Y3VwZTdrdDNwODE1" class="social-icon">
+          <img src="img/256px-Instagram_icon.png" alt="Instagram" />
+        </a>
+      </div>
+      <div class="main-icon" id="mainIcon">
+        <img src="img/chat.png" alt="Message" id="mainIconImg" />
+      </div>
+    </div>
     <footer>
       <div class="footer-rows container">
         <div class="footer-row footer-row1">
@@ -185,16 +202,12 @@
             </div>
           </ul>
         </div>
-        <div class="footer-row footer-row3">
-          <h2>Abonə olmaq</h2>
+        <div class="footer-row footer-row3 esmer">
+          <h2>Bizi İzləyin</h2>
           <p>
-            Yeni məhsullardan və <br />
-            kampaniyalardan xəbərdar olun
+            <a target="_blank" href="https://www.instagram.com/baharatci.az?igsh=Y3VwZTdrdDNwODE1"><i class="fa-brands fa-instagram"></i></a>
+           <a target="_blank" href="https://www.tiktok.com/@baharatci.az?_t=8mg0HgFS6ae&_r=1"><i class="fa-brands fa-tiktok"></i></a> 
           </p>
-          <input type="email" placeholder="E-Mail" /> <br />
-          <button class="btn4 btn-after">
-            <a href=""><i class="fa-solid fa-envelope"></i> Gonder</a>
-          </button>
         </div>
       </div>
     </footer>
@@ -204,6 +217,7 @@
     <script src="js/hamburger.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/toTop.js"></script>
+    <script src="js/floaticons.js"></script>
 
     <script src="js/modal.js"></script>
     <script>
@@ -224,13 +238,6 @@
                 </button>
                 <p class="bb1">${item.name} ${item.about}</p>
                 <p class="osal">${item.price}</p>
-                <div class="strs">
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                </div>
               </div>
             </div>`;
         });

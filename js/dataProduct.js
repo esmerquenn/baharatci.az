@@ -186,3 +186,43 @@ const data = [
     ],
   },
 ];
+const moreSellers = [
+  { id: 32, img: "qizilgul.webp", name: "Qızılgül", about: "100 qr", price: " 3₼  ", category: "Təbii otlar" },
+  { id: 34, img: "zeytun.webp", name: "Zeytun yağı", about: "100 qr", price: " 1₼  ", category: "Təbii yağlar" },
+  { id: 21, img: "əncir.png", name: "Əncir qurusu", about: "100qr", price: " 2.50₼  ", category: "Meyvə qurusu" },
+  { id: 24, img: "qaraKişmiş.png", name: " Qara kişmiş ", about: "100qr ", price: " 2.50₼  ", category: "Meyvə qurusu" },
+  { id: 16, img: "qarisiq.webp", name: "Qarışıq ləpə", about: "100qr ", price: "2₼ ", category: "Çərəzlər" },
+  { id: 2, img: "mixek.webp", name: "Mixək", about: "Üyüdülmüş 100qr", price: "4₼", category: "Baharatlar" },
+  { id: 11, img: "findiq.webp", name: "Fındıq ", about: "100 qr ", price: "2.30₼  ", category: "Çərəzlər" },
+];
+
+const discountedProducts = [
+  {
+    id: 7,
+    img: "zencefil.png",
+    name: "Zəncəfil",
+    about: "100 qr",
+    price: "2.40₼",
+    category: "Baharatlar",
+  },
+  { id: 41, img: "qatisut.png", name: "Qatılaşdırılmış süd", about: "500 qr", price: " 3₼", category: "Tort məhsulları" },
+  {
+    id: 4,
+    img: "qaraistiot.webp",
+    name: "Qara istiot",
+    about: "Yumru 100 qr",
+    price: "2₼ ",
+    category: "Baharatlar",
+  },
+  {
+    id: 0,
+    img: "hil.webp",
+    name: "Hil",
+    about: "Üyüdülmüş 100 qr",
+    price: "12₼",
+    category: "Baharatlar",
+  },
+  { id: 22, img: "Kivi.jpg", name: "Kivi qurusu", about: "  100qr", price: "  1.50₼ ", category: "Meyvə qurusu" },
+  { id: 31, img: "nane.webp", name: "Nanə", about: "100 qr ", price: " 0.90₼  ", category: "Təbii otlar" },
+  { id: 36, img: "kokos.webp", name: "Kokos yağı", about: "100 qr", price: " 1₼", category: "Təbii yağlar" },
+];

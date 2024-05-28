@@ -6,8 +6,7 @@ data.map((item, i) => {
   categories += ` 
   <div onclick="getCategory('${item.category}', '${i}')" id="${item.category}"  class="category cat-${i + 1}">
     <div>
-      <span>${item.category}</span> <br />
-      ${item.cards?.length} məhsul
+      <span>${item.category}</span>
     </div>
   </div>`;
 });
@@ -50,11 +49,6 @@ function getCards(category) {
         </div>
             <img class="card-img" src="mehsullar/${item.img}" alt="${item.name}" />
             <div class="kart-main">
-              <div class="position">
-                <div class="boyukdaire">
-                  <div class="kicikdaire">0</div>
-                </div>
-              </div>
               <div class="pp-div">
                 <p class="pp1">${item.name}</p>
                 <p class="pp3">${item.about}</p>

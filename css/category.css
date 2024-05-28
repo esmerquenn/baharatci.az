@@ -1,4 +1,5 @@
 h3 {
+  text-align: center;
   font: 500 2rem/1.5 "Amatic SC", cursive;
   color: #68b210;
 }
@@ -16,15 +17,18 @@ h2 {
   padding-block: 20px;
 }
 .section-category {
-padding-block: 50px 20px;
+  padding-block: 5px 20px;
   text-align: center;
 }
 
-.howToWork{text-align: center;padding-block: 20px;}
-.category-center {
-  /* margin-block: 40px; */
-  & h3{display: none;}
+.howToWork {
+  text-align: center;
+  padding-block: 20px;
 }
+.category-center h3 {
+  display: none;
+}
+
 .categories {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -33,6 +37,7 @@ padding-block: 50px 20px;
 }
 
 .category {
+  cursor: pointer;
   color: #333;
   width: 100%;
   max-width: 300px;
@@ -48,11 +53,9 @@ padding-block: 50px 20px;
   border: 2px solid #68b20f;
   span {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }
-
-
 
 .category:active,
 .category:hover {
@@ -64,17 +67,11 @@ padding-block: 50px 20px;
   text-align: left;
   width: 95%;
   margin: 0 auto;
-  border: 2px solid rgba(200, 200, 200, 0.462);
+  border: 2px solid #68b20f;
+  border-radius: 10px;
+  overflow: hidden;
   background: #fff;
 }
-.cards {
-  & .kart {
-    border-radius: 10px;
-    border: 2px solid #68b20f;
-    overflow: hidden;
-  }
-}
-
 .kart-main {
   display: flex;
   flex-direction: column;
@@ -85,44 +82,21 @@ padding-block: 50px 20px;
   max-height: 250px;
   object-fit: cover;
 }
-.position {
-  position: relative;
-  display: block;
-  height: 4vh;
-  width: 100%;
-}
-.boyukdaire {
-  background-color: #fe9505;
-  width: 50px;
-  height: 2vh;
-  border-radius: 40px;
-  position: absolute;
-  left: 30px;
-  top: 5px;
-}
-.kicikdaire {
-  background-color: #fe9505;
-  position: absolute;
-  color: #fff;
-  padding: 4px 7px;
-  border-radius: 50%;
-  border: 1px solid #fff;
-  top: -3.3px;
-  font: 600 0.5rem "Advento Pro Bold", sans-serif;
-}
+
 .pp-div {
   padding: 0 10px 12px;
 }
 .pp1 {
-  font: 600 1.1rem/1.5 "Advento Pro Bold", sans-serif;
+  font: 600 1.25rem/1.5 "Advento Pro Bold", sans-serif;
 }
 .pp3 {
-  font: 600 0.9rem "Advento Pro Bold", sans-serif;
+  font: 600 0.97rem "Advento Pro Bold", sans-serif;
 }
 .pp2 {
   color: #76a713;
   font-family: "Advento Pro Bold", sans-serif;
-  font-size: 15.7px;
+  font-size: 1.2rem;
+  line-height: 2.1;
 }
 h5 {
   margin-top: 5px;
@@ -252,7 +226,9 @@ h5 {
 .banaskrt {
   width: 98%;
   max-width: 350px;
-  border: 2px solid rgba(200, 200, 200, 0.171);
+  border: 2px solid #68b210;
+  border-radius: 10px;
+  overflow: hidden;
   transition: 0.5s;
   position: relative;
   .image {
@@ -275,7 +251,7 @@ h5 {
   position: relative;
   text-align: center;
   background-color: #e7e9f15b;
-  padding: 20px 0 14px 0;
+  padding: 25px  0;
 }
 .btn6 {
   transition: 0.4s;
@@ -316,9 +292,6 @@ h5 {
   font: 400 0.8rem "Lato regular", sans-serif;
   padding: 9px 0;
 }
-.fa-star {
-  font-size: 0.8rem;
-}
 
 .banaskrt:hover {
   border: 2px solid #285e28ad;
@@ -337,14 +310,11 @@ h5 {
   .osal {
     font-size: 0.9rem;
   }
-  .fa-star {
-    font-size: 1rem;
-  }
   .bb1 {
     font: 600 1rem "Advento Pro Bold", sans-serif;
   }
   .pp-div {
-    padding: 0 30px 22px;
+    padding: 0 22px 22px;
   }
   .after button {
     padding: 17px 30px;
@@ -359,7 +329,7 @@ h5 {
     height: 85px;
     font-size: 1rem;
     span {
-      font-size: 1.3rem;
+      font-size: 1.6rem;
     }
   }
 
@@ -369,19 +339,12 @@ h5 {
   }
 
   .pp1 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   .pp3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
-  .boyukdaire {
-    width: 70px;
-    height: 2.3vh;
-  }
-  .kicikdaire {
-    padding: 5px 8px 5.5px 8px;
-    font-size: 9px;
-  }
+
 
   .work-cards {
     flex-direction: row;
@@ -437,7 +400,6 @@ h5 {
   }
   .all-h3 {
     grid-column: 3 span/4;
- 
   }
   .categories {
     margin: 0;
@@ -465,11 +427,15 @@ h5 {
   }
   .category-center {
     margin-bottom: 40px;
-    & h3{display: block;}
-    & h2{display: none;}
+    & h3 {
+      display: block;
+    }
+    & h2 {
+      display: none;
+    }
   }
   .all-h3 {
-   display: none;
+    display: none;
   }
 
   .categories {
