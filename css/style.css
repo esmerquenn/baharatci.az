@@ -423,40 +423,6 @@ h1 {
 h6 {
   display: none;
 }
-
-.button-slider {
-  border: none;
-  border-radius: 30px;
-  background: #fff;
-  padding: 6px;
-  height: 36px;
-  width: 6rem;
-  font: 700 0.7rem/1 arial, sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  position: relative;
-  transition: all 0.5s;
-  transform: translateY(260px);
-  animation: upFromDownButton 0.9s ease-out 0.6s forwards;
-
-  & a {
-    color: #000;
-  }
-  & .fa-angle-right {
-    display: none;
-  }
-}
-.button-slider:hover {
-  background: #659833;
-  a {
-    color: #fff;
-  }
-  i {
-    color: #659833;
-    background: #fff;
-  }
-}
-
 /* slider end */
 
 .haqqimizda {
@@ -693,36 +659,6 @@ h4 {
     animation: upFromDownh6 0.9s ease-out 0.5s forwards;
   }
 
-  .button-slider {
-    padding: 6px 6px 6px 25px;
-    height: 50px;
-    width: 140px;
-    font: 700 0.9rem/1 arial, sans-serif;
-    text-align: left;
-
-    & .fa-angle-right {
-      display: inline;
-      background: #659833;
-      color: #fff;
-      position: absolute;
-      right: 6px;
-      top: 5px;
-      bottom: 7px;
-      padding: 14px 17px;
-      border-radius: 30px;
-    }
-  }
-  .button-slider:hover {
-    background: #659833;
-    a {
-      color: #fff;
-    }
-    i {
-      color: #659833;
-      background: #fff;
-    }
-  }
-
   .haqqimizda {
     padding: 95px 0;
   }
@@ -861,13 +797,6 @@ h4 {
   .organic {
     width: 10rem;
     transform: translateY(-260px) translateX(-60px) rotate(-90deg);
-  }
-
-  .button-slider {
-    height: 56px;
-    & .fa-angle-right {
-      top: 7px;
-    }
   }
 
   h1 {

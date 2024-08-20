@@ -42,14 +42,10 @@ $(".dot").on("click", function () {
 const h1 = document.querySelector("h1");
 const h6 = document.querySelector("h6");
 const organic = document.querySelector(".organic");
-const buttonSlider = document.querySelector(".button-slider");
 function animateOrganic() {
   organic.style.animation = "none";
   organic.offsetHeight;
   organic.style.animation = `slideDownAndRotate 0.9s ease-out .5s forwards`;
-  buttonSlider.style.animation = "none";
-  buttonSlider.offsetHeight;
-  buttonSlider.style.animation = `upFromDownButton 0.9s ease-out 0.6s forwards`;
   h1.style.animation = "none";
   h1.offsetHeight;
   h1.style.animation = `upFromDown 0.9s ease-out forwards`;
